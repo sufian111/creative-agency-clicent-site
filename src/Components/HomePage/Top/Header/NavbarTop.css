@@ -1,0 +1,11 @@
+.modify {
+  font-family: Poppins;
+  color: 474747;
+  margin-right: 20px;
+}
+
+.btnModify {
+  background-color: #111430;
+  color: #ffffff;
+  padding: 0 30px;
+}

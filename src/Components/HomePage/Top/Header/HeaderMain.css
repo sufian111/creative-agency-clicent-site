@@ -1,0 +1,33 @@
+.wordSection {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+
+  /* or 125% */
+  letter-spacing: 0.01em;
+
+  color: #111430;
+}
+
+.paragraphSetion {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* or 150% */
+  letter-spacing: 0.005em;
+
+  color: #000000;
+}
+.buttonSection {
+  background-color: #111430;
+  color: #ffffff;
+  padding: 5px 30px;
+}
+.headerSection {
+  padding-top: 40px;
+}
