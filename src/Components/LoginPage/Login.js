@@ -1,9 +1,12 @@
 import React from "react";
+import LoginMain from "./LoginMain/LoginMain";
+import LoginNav from "./LoginNav/LoginNav";
 
 const Login = () => {
   return (
-    <div>
-      <p>this is login page</p>
+    <div className="container">
+      <LoginNav></LoginNav>
+      <LoginMain></LoginMain>
     </div>
   );
 };

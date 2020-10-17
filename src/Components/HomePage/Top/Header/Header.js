@@ -4,7 +4,7 @@ import NavbarTop from "./NavbarTop";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="bgColor">
+    <div className="bg">
       <NavbarTop></NavbarTop>
       <HeaderMain></HeaderMain>
     </div>

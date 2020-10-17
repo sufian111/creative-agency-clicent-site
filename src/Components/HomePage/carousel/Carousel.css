@@ -1,3 +1,30 @@
-.bgColor {
-  background-color: black;
+.bgSection {
+  background-color: #111430;
+}
+
+.pSetion {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 43px;
+
+  text-align: center;
+  letter-spacing: 0.396px;
+
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.green {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 43px;
+
+  text-align: center;
+  letter-spacing: 0.396px;
+
+  color: #7ab259;
 }

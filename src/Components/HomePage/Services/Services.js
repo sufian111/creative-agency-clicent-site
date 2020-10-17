@@ -1,28 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import ServicesCard from "./ServicesCard";
 import "./Services.css";
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 const Services = () => {
-  const allServices = [
-    {
-      name: "Web and Mobile design",
-      description:
-        "We craft stunning and amazing web UI, using a well drafted UX to fit your product",
-      img: "https://i.ibb.co/JrMbcwv/service1.png",
-    },
-    {
-      name: "Graphic Design",
-      description:
-        "Amazing flyers and social media posts and brand representations that would make your brand stand out ",
-      img: "https://i.ibb.co/t4577TY/service2.png",
-    },
 
-    {
-      name: "Web Development",
-      description:
-        "With well written codes,we build amazing app for all platform mobile and web app in general",
-      img: "https://i.ibb.co/yYWtRKj/service3.png",
-    },
-  ];
+  const[allServices,setAllServices] = useState([]);
+
+  
+
+  useEffect(() => {
+    fetch("http://localhost:5000/allCourse")
+      .then((response) => response.json())
+      .then((data) => setAllServices(data));
+  }, []);
+
+
+  const [division,setDivision] = useState(true);
+
+
+  const history = useHistory();
+  const handlePath = () => {
+    console.log("click");
+    history.push("/allCourseList");
+  };
+
 
   return (
     <div className="container mt-5">
@@ -35,6 +37,9 @@ const Services = () => {
         {allServices.map((service) => (
           <ServicesCard service={service}></ServicesCard>
         ))}
+      </div>
+      <div>
+          {division && <button onClick={handlePath}  className="btn btn-primary divCenter">All Course</button> }
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeaderMain.css";
 import banner from "../../../../images/logos/Frame.png";
+import { Link } from "react-router-dom";
 const HeaderMain = () => {
   return (
     <div className="container headerSection">
@@ -11,7 +12,9 @@ const HeaderMain = () => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
             itaque doloremque a nostrum optio culpa.
           </p>
-          <button className="btn buttonSection">Hire Us</button>
+          <Link to="/login">
+            <button className="btn buttonSection">Hire Us</button>
+          </Link>
         </div>
         <div className="col-md-8">
           <img style={{ width: "90%" }} src={banner} alt="" />

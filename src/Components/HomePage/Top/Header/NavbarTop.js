@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { userDetails } from "../../../../App";
 import logo from "../../../../images/logos/logo.png";
 import "./NavbarTop.css";
 const NavbarTop = () => {
+  const [loggingUser, setLoggingUser] = useContext(userDetails);
+  const handleReloadPage = () => {
+    window.location.reload();
+  };
   return (
     <div className="container ">
       <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">
-          <img style={{ width: "30%" }} src={logo} alt="" />
-        </a>
+        <Link to="/">
+          <a class="navbar-brand">
+            <img style={{ width: "30%" }} src={logo} alt="" />
+          </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +50,18 @@ const NavbarTop = () => {
                 Contact Us
               </a>
             </li>
-            <button class="btn btnModify">Login</button>
+
+            {loggingUser.email ? (
+              <button class="btn btnModify" onClick={handleReloadPage}>
+                Logout
+              </button>
+            ) : (
+              <button class="btn btnModify">
+                <Link to="/login" style={{ color: "white" }}>
+                  Login
+                </Link>
+              </button>
+            )}
           </ul>
         </div>
       </nav>

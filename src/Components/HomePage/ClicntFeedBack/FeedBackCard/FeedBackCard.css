@@ -1,0 +1,26 @@
+.feedbackBox {
+  border: 1px solid #bfbfbf;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.pMore {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.ptwoMore {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+}

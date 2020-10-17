@@ -1,0 +1,31 @@
+.loginDiv {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 150px;
+  width: 570px;
+  height: 457px;
+  margin: 0 auto;
+  border: 1px solid #ababab;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.logText {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.bgwithDiv {
+  background-image: url("https://i.ibb.co/m5cpBvR/google.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 10%;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  border-radius: 57px;
+}
