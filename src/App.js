@@ -23,16 +23,16 @@ function App() {
           <PrivateRoute path="/customar">
             <FinishCustomar></FinishCustomar>
           </PrivateRoute>
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin></Admin>
-          </Route>
-          <Route path="/allCourseList">
+          </PrivateRoute>
+          <PrivateRoute path="/allCourseList">
             <AllCourse></AllCourse>
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/orderCourse/:id">
+          <PrivateRoute path="/orderCourse/:id">
             <OrderCourse></OrderCourse>
-          </Route>
+          </PrivateRoute>
 
           <Route path="*">
             <p>this is error page</p>
